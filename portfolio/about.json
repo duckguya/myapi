@@ -1,0 +1,67 @@
+[
+  {
+    "name": "리딩퍼센트 (back-end, front-end 관리자 페이지)",
+    "description": "유저의 영어 학습을 도와주는 애플리케이션입니다. 등급 별 구독권을 결제합니다. 쿠폰을 사용할 수 있습니다. 기간 안에 학습하지 않으면 기록이 리셋되는 옵션을 가지고 있습니다. 시니어 백엔드 개발자와 시니어 프론트엔드 개발자 총 세명이서 프로젝트를 진행했습니다. 제가 맡은 역할은 주로 기술환경을 구축하고 seed파일로 더메 데이터를 생성하여 테스트를 바로 할 수 있도록 백업하였습니다.",
+    "techStack": "Adonis.js, MySQL, Docker, NCP-Object Storage, Cloud Outbound Mailer, Simple&Easy Notification Service, React.js, styled-component",
+    "techDescription": [
+      "백엔드/프론트엔드 기술환경 구축",
+      "RESTful API 설계",
+      "애플리케이션 관리를 위한 관리자 페이지 개발",
+      "ncp를 이용하여 비밀번호 수정을 위한 메일 전송",
+      "ncp를 이용하여 알림 서비스 개발",
+      "db migration 사용으로 데이터 수정하며 seed파일 생성 후 더미 데이터 생성"
+    ]
+  },
+  {
+    "name": "ASK Korea (back-end)",
+    "description": "외국인을 대상으로한 지식in 서비스",
+    "techStack": "Adonis.js, MySQL, AWS S3",
+    "techDescription": ["백엔드 기술환경 구축", "db 설계", "RESTful API 개발"]
+  },
+  {
+    "name": "아르고스 VMA (back-end)",
+    "description": "QRCode를 통한 체크인, 체크아웃 방문객 관리 시스템. 시니어 개발자와 협업하여 진행하였습니다.",
+    "techStack": "Adonis.js, Next.js, AWS S3, SES",
+    "techDescription": [
+      "백엔드/프론트엔드 기술환경 구축",
+      "RESTful API 개발",
+      "AWS를 이용한 메일 전송 및 파일 저장 기능 구현",
+      "애플리케이션 관리를 위한 관리자 페이지 개발"
+    ]
+  },
+  {
+    "name": "업테크 트레이닝 (back-end, front-end 관리자 페이지)",
+    "description": "키오스크 업체 사이트 제작",
+    "techStack": "Node.js, Firebase, AWS S3, SES, React.js, Next.js",
+    "techDescription": [
+      "firebase 기반 Restful API 개발",
+      "React.js, Next.js 기반 관리자 페이지 개발",
+      "AWS를 이용한 메일 전송 및 파일 저장 기능 구현",
+      "ant design을 이용하여 관리자 페이지 디자인 개발"
+    ]
+  },
+  {
+    "name": "페이체크 (back-end, front-end 관리자 페이지)",
+    "description": "출/퇴근 관리 서비스. 시니어 개발자와 협업하여 진행하였습니다.",
+    "techStack": "Python Flask, PostgreSql, React.js, Next.js",
+    "techDescription": [
+      "PostgreSql 기반 클라이언트 관리자 Restful API 개발",
+      "React.js, Next.js 기반 클라이언트 관리자 페이지 개발"
+    ]
+  },
+  {
+    "name": "알림서랍 (back-end)",
+    "description": "사용자의 취향을 학습해 알림을 분류하고 보여주는 애플리케이션. 시니어 개발자와 협업하여 진행하였습니다.",
+    "techStack": "Python Django",
+    "techDescription": ["Restful API 개발", "Daum API를 이용한 주소 찾기 구현"]
+  },
+  {
+    "name": "로아인텔리전스 (front-end 관리자 페이지)",
+    "description": "기사 빅데이터 사이트 관리자 페이지 제작",
+    "techStack": "React.js, Next.js",
+    "techDescription": [
+      "React.js, Next.js 기반 관리자 페이지 개발",
+      "ant design을 이용하여 관리자 페이지 디자인 개발"
+    ]
+  }
+]
