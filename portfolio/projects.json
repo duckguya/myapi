@@ -23,17 +23,17 @@
       {
         "sub_title": "다크 모드",
         "image": "todo1",
-        "text": "Recoil을 사용하여 atom의 값에 따라 다크 모드와 라이트 모드가 변경되도록 구현하였습니다. atom의 기본값은 boolean 타입으로 지정해 주었습니다.ThemeProvider를 다크 모드가 필요한 컴포넌트 위에 래핑 해주어 atom의 값이 변경되면 미리 설정해놓은 스타일 객체를 적용시켜 전역으로 theme의 스타일을 사용할 수 있게 하였습니다.useRecoilState을 사용하여 다크 모드 버튼을 누르면 현재 값의 반대 값으로 변경시켜 값을 업데이트했습니다. 해당 atom을 구독하고 있던 ThemeProvider에 theme의 값이 변경되어 다크 모드와 라이트 모드를 사용할 수 있게 하였습니다."
+        "text": "Recoil을 사용하여 atom의 값에 따라 다크 모드와 라이트 모드가 변경되도록 구현하였습니다. atom의 기본값은 boolean 타입으로 지정해 주었습니다.\nThemeProvider를 다크 모드가 필요한 컴포넌트 위에 래핑 해주어 atom의 값이 변경되면 미리 설정해놓은 스타일 객체를 적용시켜 전역으로 theme의 스타일을 사용할 수 있게 하였습니다.\n\nuseRecoilState을 사용하여 다크 모드 버튼을 누르면 현재 값의 반대 값으로 변경시켜 값을 업데이트했습니다. 해당 atom을 구독하고 있던 ThemeProvider에 theme의 값이 변경되어 다크 모드와 라이트 모드를 사용할 수 있게 하였습니다."
       },
       {
         "sub_title": "ToDo 생성",
         "image": "todo2",
-        "text": "생성한 투두를 바로 볼 수 있게 상태 관리 라이브러리인 recoil을 사용하였습니다.ToDo 저장 버튼 클릭 시 recoil atom의 state 값을 업데이트하기 위해 useSetRecoilState 함수를 사용하였습니다. 리턴된 setter 함수에 작성한 toDo와 카테고리 위치 그리고 id를 넣어주었습니다. id는 Date 함수로 밀리 초를 사용하여 유니크한 값을 사용할 수 있게 하였습니다. 저장 및 상태 동기화를 위해 Recoil-persist 라이브러리를 사용하였습니다. localstorage에 저장하기 위해 아무런 설정을 해주지 않았습니다.useForm hook을 사용하여 input에서 값을 불러오고 유효성 검사를 하였습니다. register 메소드를 사용하여 검증 규칙을 적용할 수 있게 하였습니다.uesFormState hook으로부터 받은 errors 객체를 이용해 에러가 날 경우 필요한 문구를 내보내어 사용자가 문제를 인식할 수 있게 하였습니다.유효성 검사를 통과하면 handleSubmit함수를 사용하여 form의 데이터를 매개변수로 전달받아 사용하였습니다."
+        "text": "생성한 투두를 바로 볼 수 있게 상태 관리 라이브러리인 recoil을 사용하였습니다.ToDo 저장 버튼 클릭 시 recoil atom의 state 값을 업데이트하기 위해 useSetRecoilState 함수를 사용하였습니다. 리턴된 setter 함수에 작성한 toDo와 카테고리 위치 그리고 id를 넣어주었습니다. id는 Date 함수로 밀리 초를 사용하여 유니크한 값을 사용할 수 있게 하였습니다.\n\n저장 및 상태 동기화를 위해 Recoil-persist 라이브러리를 사용하였습니다. localstorage에 저장하기 위해 아무런 설정을 해주지 않았습니다.\n\nuseForm hook을 사용하여 input에서 값을 불러오고 유효성 검사를 하였습니다. register 메소드를 사용하여 검증 규칙을 적용할 수 있게 하였습니다.\nuesFormState hook으로부터 받은 errors 객체를 이용해 에러가 날 경우 필요한 문구를 내보내어 사용자가 문제를 인식할 수 있게 하였습니다.\n유효성 검사를 통과하면 handleSubmit함수를 사용하여 form의 데이터를 매개변수로 전달받아 사용하였습니다."
       },
       {
         "sub_title": "ToDo 수정",
         "image": "todo3",
-        "text": "컴포넌트 상태 관리를 위하여 리액트의 Hook인 useState를 사용하였습니다. useState를 이용해 boolean 타입인 isEdit 변수를 만들고 값에 따라 수정 페이지가 나타나도록 하였습니다. useRecoilState 함수를 사용하여 setter 함수를 받아 업데이트하였습니다. 스프레드 연산자로 기존 데이터를 복사한 후 findIndex 함수로 수정할 id와 같은 값을 찾아 index를 반환하였습니다. splice 함수로 해당 인덱스를 삭제해주고 slice 함수로 수정할 인덱스 앞뒤에 있는 데이터를 찾아주었습니다. 해당 값들을  스프레드 연산자로 넣어주고 가운데에 새 투두 데이터를 넣어주어 수정해 주었습니다. "
+        "text": "컴포넌트 상태 관리를 위하여 리액트의 Hook인 useState를 사용하였습니다.\nuseState를 이용해 boolean 타입인 isEdit 변수를 만들고 값에 따라 수정 페이지가 나타나도록 하였습니다.\nuseRecoilState 함수를 사용하여 setter 함수를 받아 업데이트하였습니다.\n스프레드 연산자로 기존 데이터를 복사한 후 findIndex 함수로 수정할 id와 같은 값을 찾아 index를 반환하였습니다. splice 함수로 해당 인덱스를 삭제해주고 slice 함수로 수정할 인덱스 앞뒤에 있는 데이터를 찾아주었습니다. 해당 값들을  스프레드 연산자로 넣어주고 가운데에 새 투두 데이터를 넣어주어 수정해 주었습니다. "
       },
       {
         "sub_title": "ToDo 삭제",
@@ -43,7 +43,7 @@
       {
         "sub_title": "ToDo 카테고리 변경",
         "image": "todo5",
-        "text": "recoil의 selector를 이용하여 카테고리 state가 변경되면 가져와야 할 ToDo 데이터를 변경할 수 있도록 처리하였습니다. recoil atom을 이용하여 카테고리 state를 만들어주었습니다. 카테고리 변경 버튼을 누르면 useRecoilState로 카테고리 state를 변경합니다. 해당 atom이 변하면 toDoSelector가 업데이트됩니다. toDoSelector는 get을 통해 전처리한 toDoState와 categoryState를 가져옵니다. 그리고 filter 함수를 통해 같은 카테고리의 데이터를 리턴하여 재렌더링합니다. "
+        "text": "recoil의 selector를 이용하여 카테고리 state가 변경되면 가져와야 할 ToDo 데이터를 변경할 수 있도록 처리하였습니다.\nrecoil atom을 이용하여 카테고리 state를 만들어주었습니다. 카테고리 변경 버튼을 누르면 useRecoilState로 카테고리 state를 변경합니다. 해당 atom이 변하면 toDoSelector가 업데이트됩니다. toDoSelector는 get을 통해 전처리한 toDoState와 categoryState를 가져옵니다. 그리고 filter 함수를 통해 같은 카테고리의 데이터를 리턴하여 재렌더링합니다. "
       }
     ],
 
@@ -77,7 +77,7 @@
       {
         "sub_title": "Content Search",
         "image": "net3",
-        "text": "애니메이션은 framer-motion 라이브러리를 사용하였습니다. 검색 아이콘을 클릭하면 설정해놓은  애니메이션이 실행됩니다.\n 검색 api는 영화와 티비쇼가 같이 검색되어 결과가 반환되기 때문에 영화 레이아웃과 티비 레이아웃을 나누었습니다. 콘테츠 리스트와 같이 같은 레이아웃을 쓰기때문에 하나의 컴포넌트에 리스트 컴포넌트와 디테일 컴포넌트를 넣어주었습니다. 리스트는  props에 type을 넣어주어 구분하였습니다.\n 검색결과가 없을 경우 메시지를 띄어주어 사용자가 확인 할 수 있게 하였습니다. "
+        "text": "애니메이션은 framer-motion 라이브러리를 사용하였습니다. 검색 아이콘을 클릭하면 설정해놓은 애니메이션이 실행됩니다.\n 검색 api는 영화와 티비쇼가 같이 검색되어 결과가 반환되기 때문에 영화 레이아웃과 티비 레이아웃을 나누었습니다. 콘테츠 리스트와 같이 같은 레이아웃을 쓰기때문에 하나의 컴포넌트에 리스트 컴포넌트와 디테일 컴포넌트를 넣어주었습니다. 리스트는  props에 type을 넣어주어 구분하였습니다.\n 검색결과가 없을 경우 메시지를 띄어주어 사용자가 확인 할 수 있게 하였습니다. "
       },
 
       {
