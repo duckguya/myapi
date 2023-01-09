@@ -153,7 +153,7 @@
       "usequery"
     ],
     "description": "리액트로 웹프론트엔드 포트폴리오 사이트 만들기",
-    "demo_link": "https://duckguya.github.io/mystie",
+    "demo_link": "https://duckguya.github.io/mysite",
     "github_link": "https://github.com/duckguya/mysite",
     "function": [
       "recoil을 이용하여 css적용하기",
