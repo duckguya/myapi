@@ -152,7 +152,7 @@
       "Recoil",
       "usequery"
     ],
-    "description": "리액트로 웹프론트엔드 포트폴리오 사이트 만들기",
+    "description": "나의 포트폴리오 사이트 만들기",
     "demo_link": "https://duckguya.github.io/mysite/#/mysite/",
     "github_link": "https://github.com/duckguya/mysite",
     "function": [
