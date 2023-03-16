@@ -1,6 +1,6 @@
 [
   {
-    "id": 3,
+    "id": 0,
     "title": "My site",
     "name": "MYSITE",
     "technologies": [
@@ -30,7 +30,7 @@
     "thumbnail": ""
   },
   {
-    "id": 0,
+    "id": 1,
     "title": "To Do List",
     "name": "TODO",
     "technologies": [
@@ -81,7 +81,7 @@
     "thumbnail": "todo_thumbnail"
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Netflix clone",
     "name": "NETFLIX",
     "technologies": ["React", "Typescript", "styled-component", "react-query"],
@@ -127,7 +127,7 @@
     "thumbnail": "net1"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Crypto Tracker * nextjs로 변경 중 *",
     "name": "CRYPTO",
     "technologies": [
