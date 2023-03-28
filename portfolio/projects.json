@@ -170,5 +170,28 @@
     ],
 
     "thumbnail": "coin_thumbnail"
+  },
+  {
+    "id": 4,
+    "title": "React-native로 구현한 날씨 어플",
+    "name": "Weather",
+    "technologies": ["React-native", "StyleSheet", "react-query"],
+    "description": "리액트 네이티브로 날씨어플 구현하기",
+    "demo_link": "#",
+    "github_link": "https://github.com/duckguya/weather_reactnative",
+    "function": [
+      "사용자의 현재 위치 얻어오기",
+      "날씨 API를 호출하여 오늘의 날씨정보 요청하기",
+      "react-query를 사용하여 데이터 캐싱하기"
+    ],
+    "contents": [
+      {
+        "sub_title": "Today",
+        "image": "",
+        "text": "사용자의 위치 정보를 얻어와 날씨 정보를 가져왔습니다. 날씨 API에 사용자 위치의 위도, 경도를 파라미터로 넣어서 정보를 가져왔습니다. 처음 데이터를 가져올 때 소요되는 시간이 조금 걸렸습니다. 이를 보완하기 위해 react-query를 사용하여 데이터를 캐싱하였습니다. 데이터 캐싱덕분에 페이지 이동에서 로딩이 걸리지 않고 동적인 사용자 경험을 제공할 수 있었습니다."
+      }
+    ],
+
+    "thumbnail": ""
   }
 ]
