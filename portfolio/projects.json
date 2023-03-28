@@ -174,7 +174,7 @@
   {
     "id": 4,
     "title": "React-native로 구현한 날씨 어플",
-    "name": "Weather",
+    "name": "WEATHER",
     "technologies": ["React-native", "StyleSheet", "react-query"],
     "description": "리액트 네이티브로 날씨어플 구현하기",
     "demo_link": "#",
