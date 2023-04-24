@@ -8,14 +8,14 @@
       "Typescript",
       "styled-component",
       "Recoil",
-      "usequery"
+      "react-query"
     ],
     "description": "나의 포트폴리오 사이트 만들기",
     "demo_link": "https://duckguya.github.io/mysite/#/mysite/",
     "github_link": "https://github.com/duckguya/mysite",
     "function": [
       "recoil을 이용하여 css적용하기",
-      "axios로 프로젝트 데이터 호출하고 usequery 데이터 캐싱하기",
+      "axios로 프로젝트 데이터 호출하고 데이터 캐싱하기",
       "useNavigate와 Link로 페이지 이동하기",
       "position:sticky 적용하기"
     ],
@@ -23,7 +23,7 @@
       {
         "sub_title": "Home",
         "image": "",
-        "text": "React와 TypeScript를 사용하여 개발하였습니다. 심플한 디자인과 눈의 흐름에 맞는 레이아웃을 중점으로 구성하였습니다. 페이지의 위치에 따라 헤더의 탭 색상이 변경되는 기능을 구현하기 위해 Recoil을 사용하였으며, 페이지 위치를 파악하기 위해 react-router-dom의 useLocation을 사용했습니다.\n\n프로젝트 리스트는 썸네일이 있으며, 마우스 오버 시 프로젝트의 간략한 설명이 표시됩니다. 각 페이지의 데이터는 GitHub에 JSON 형식의 파일로 저장되어 있고, axios를 사용하여 데이터를 호출하였습니다. 호출된 데이터는 useQuery로 캐싱하여 관리하였습니다.\n\nCSS 효과 중 position:sticky를 프로젝트 상세 페이지에 사용하였습니다. 글이 길어질 경우 왼쪽에 이미지가 고정되어 재미를 더해줄 효과를 기대하였습니다. 레이아웃은 flex로 구성되어 있고, 왼쪽에 이미지, 오른쪽에 글이 배치되어 있습니다. 글의 세로 길이가 이미지보다 길 경우, 이미지는 고정되고 글의 스크롤이 다 올라가면 고정이 풀리는 효과를 주었습니다."
+        "text": "React와 TypeScript를 사용하여 개발하였습니다. 심플한 디자인과 눈의 흐름에 맞는 레이아웃을 중점으로 구성하였습니다. 페이지의 위치에 따라 헤더의 탭 색상이 변경되는 기능을 구현하기 위해 Recoil을 사용하였으며, 페이지 위치를 파악하기 위해 react-router-dom의 useLocation을 사용했습니다.\n\n프로젝트 리스트는 썸네일이 있으며, 마우스 오버 시 프로젝트의 간략한 설명이 표시됩니다. 각 페이지의 데이터는 GitHub에 JSON 형식의 파일로 저장되어 있고, axios를 사용하여 데이터를 호출하였습니다. 호출된 데이터는 react-query로 캐싱하여 관리하였습니다.\n\nCSS 효과 중 position:sticky를 프로젝트 상세 페이지에 사용하였습니다. 글이 길어질 경우 왼쪽에 이미지가 고정되어 재미를 더해줄 효과를 기대하였습니다. 레이아웃은 flex로 구성되어 있고, 왼쪽에 이미지, 오른쪽에 글이 배치되어 있습니다. 글의 세로 길이가 이미지보다 길 경우, 이미지는 고정되고 글의 스크롤이 다 올라가면 고정이 풀리는 효과를 주었습니다."
       }
     ],
 
@@ -135,7 +135,7 @@
       "Typescript",
       "styled-component",
       "Recoil",
-      "usequery"
+      "react-query"
     ],
     "description": "coinpaprika api를 활용한 암호화폐 트래커 페이지 만들기",
     "demo_link": "https://duckguya.github.io/crypto-tracker/",
@@ -150,7 +150,7 @@
       {
         "sub_title": "정렬 기능",
         "image": "coin1",
-        "text": "랭크순, 오름차순, 내림차순으로 정렬 기능을 구현하였습니다.\n서버로부터 데이터를 조회하기 위해 useQuery를 사용하였습니다. useQuery의 두 번째 인자에 api 호출 함수를 넣어주었습니다.\n호출 함수의 props에 정렬 카테고리를 전달하여 데이터를 반환하기 전 sort() 함수를 사용할 수 있게 하였습니다.\n\napi를 호출하여 전달받은 데이터에는 coin 리스트와 token 리스트가 섞여있어 분리 처리를 하였습니다. filter 함수를 통해 데이터의 type이 token인 것과 coin인 것을 구분하여 반환하도록 처리하였습니다. "
+        "text": "랭크순, 오름차순, 내림차순으로 정렬 기능을 구현하였습니다.\nreqct-query를 사용하여 호출된 데이터를 캐싱하였습니다.\n\napi를 호출하여 전달받은 데이터에는 coin 리스트와 token 리스트가 섞여있어 분리 처리를 하였습니다. filter 함수를 통해 데이터의 type이 token인 것과 coin인 것을 구분하여 반환하도록 처리하였습니다. "
       },
       {
         "sub_title": "다크 모드",
